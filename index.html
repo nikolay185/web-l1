@@ -4,116 +4,169 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normilize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Простые вещи из бумаги</title>
 </head>
 
 <body>
     <header>
         <a href="#">
-            <img src="#" alt="Логотип" />
+            <img class="Logo_header" src="images/Logo_black.svg" alt="Логотип" />
         </a>
-        <button><img src="#" alt="Модальное окно"></button>
-        <button><img src="#" alt="Поиск"></button>
-        <a href="#">Вход</a>
+        <div class="pad">
+            <button><img src="images/List.svg" alt="Модальное окно"></button>
+            <button class="navigation"><img src="images/Search.svg" alt="Поиск"></button>
+            <a class="navigation" href="#"><img src="images/log-in.svg" alt="Вход"></a>
+        </div>
     </header>
     <main>
-        <h1>Main page on simple</h1>
-        <section>
-            <h2>Простые вещи. Из бумаги</h2>
+        <h1 hidden>Main page on simple</h1>
+        <section class="pad bombagia">
+            <h2>Простые вещи.<br>Из бумаги</h2>
             <p>
                 Бума́га (предположительно от итал. bombagia, первоисточником же
                 считается иранский) — волокнистый материал c минеральными добавками.
             </p>
-            <a href="#">Каталог</a>
+            <div class="catalog">
+                <a href="#">Каталог</a>
+            </div>
         </section>
-        <section>
-            <h2>Максимальная белизна</h2>
-            <p>Для повышения белизны, гладкости и мягкости в состав бумажной массы вводят белые минеральные вещества:
-                мел, тальк, каолин и др. Эта операция называется наполнением.</p>
-            <p>Отлив бумажного листа осуществляют на бумагоделательной машине, важнейшей частью которой является
-                непрерывно движущаяся (как транспортер) металлическая или капроновая сетка.</p>
-            <div>
-                <h3>V1</h3>
-                <img src="#" alt="v1" />
-                <p>Результат вашего обучения</p>
+        <section class="background">
+            <div class="results">
+                <div class="result">
+                    <div>
+                        <img class="paper" src="images/v1.png" alt="v1" />
+                    </div>
+                    <div>
+                        <p class="header">V.1</p>
+                        <p class="marg">Результат вашего обучения</p>
+                    </div>
+                </div>
+                <div class="result">
+                    <div>
+                        <img class="paper" src="images/v2.png" alt="v2" />
+                    </div>
+                    <div>
+                        <p class="header">V.2</p>
+                        <p class="marg">Результат вашего обучения</p>
+                    </div>
+                </div>
+                <div class="result">
+                    <div>
+                        <img class="paper" src="images/v3.png" alt="v3" />
+                    </div>
+                    <div>
+                        <p class="header">V.3</p>
+                        <p class="marg">Результат вашего обучения</p>
+                    </div>
+                </div>
             </div>
+
             <div>
-                <h3>V2</h3>
-                <img src="#" alt="v2" />
-                <p>Результат вашего обучения</p>
+                <img src="images/paper.png" alt="paper" />
+                <h2>Максимальная белизна</h2>
+                <p>
+                    Для повышения белизны, гладкости и мягкости в состав бумажной массы
+                    вводят белые минеральные вещества: мел, тальк, каолин и др. Эта
+                    операция называется наполнением.
+                </p>
+                <p>
+                    Отлив бумажного листа осуществляют на бумагоделательной машине,
+                    важнейшей частью которой является непрерывно движущаяся (как
+                    транспортер) металлическая или капроновая сетка.
+                </p>
             </div>
-            <div>
-                <h3>V3</h3>
-                <img src="#" alt="v3" />
-                <p>Результат вашего обучения</p>
-            </div>
-            <img src="#" alt="paper" />
         </section>
-        <section>
-            <h2>Catalog</h2>
+        <section class="pad">
+            <h2 hidden>Catalog</h2>
             <div>
+                <img class="package" src="images/packaging.png" alt="packaging" width=290 height=180 />
                 <h3>Упаковка</h3>
-                <p>Тираж: от 50 штук</p>
-                <img src="#" alt="Упаковка">
-                <p>Сделано из крафт-бумаги или плотного картона. Упаковки имеют различные формы и расцветки, изготовим
-                    форму под заказ.</p>
-                <a href="#">Подробнее</a>
-                <img src="#" alt="Стрелка">
+                <p class="bombagia">Тираж: от 50 штук</p>
+                <p>
+                    Сделано из крафт-бумаги или плотного картона. Упаковки имеют
+                    различные формы и расцветки, изготовим форму под заказ.
+                </p>
+                <a class="link" href="#">Подробнее</a>
+                <img src="images/Arrow.svg" alt="Стрелка" width=20 height=auto>
             </div>
             <div>
+                <img class="package" src="images/packets.png" alt="packets" width=290 height=180 />
                 <h3>Пакеты</h3>
-                <p>Тираж: от 200 штук</p>
-                <img src="#" alt="Пакеты">
-                <p>С прямоугольным дном. От 10 см до 60 см по высоте. Материалы: картон, крафт-бумага. Различные
-                    расцветки и дизайн.</p>
-                <a href="#">Подробнее</a>
-                <img src="#" alt="Стрелка">
+                <p class="bombagia">Тираж: от 200 штук</p>
+                <p>
+                    С прямоугольным дном. От 10 см до 60 см по высоте. Материалы:
+                    картон, крафт-бумага. Различные расцветки и дизайн.
+                </p>
+                <a class="link" href="#">Подробнее</a>
+                <img src="images/Arrow.svg" alt="Стрелка" width=20 height=auto />
             </div>
             <div>
+                <img class="package" src="images/cases.png" alt="cases" />
                 <h3>Кейсы</h3>
-                <p>Тираж: от 30 штук</p>
-                <img src="#" alt="Кейсы">
-                <p>Подойдет для документов и других бумаг. Различные расцветки, размеры и плотность. Материал:
-                    прессованная бумага.</p>
-                <a href="#">Подробнее</a>
-                <img src="#" alt="Стрелка">
+                <p class="bombagia">Тираж: от 30 штук</p>
+                <p>
+                    Подойдет для документов и других бумаг. Различные расцветки, размеры
+                    и плотность. Материал: прессованная бумага.
+                </p>
+                <a class="link" href="#">Подробнее</a>
+                <img src="images/Arrow.svg" alt="Стрелка" width=20 height=auto />
             </div>
             <div>
+                <img class="package" src="images/another.png" alt="Упаковка" />
                 <h3>Другие изделия</h3>
                 <p>Тираж: от 100 штук</p>
-                <img src="#" alt="Упаковка">
-                <p>Нестандартные упаковки, кейсы и другие изделия различных размеров и конфигураций. Изготовим в
-                    кратчайшие сроки.</p>
-                <a href="#">Подробнее</a>
-                <img src="#" alt="Стрелка">
+                <p>
+                    Нестандартные упаковки, кейсы и другие изделия различных размеров и
+                    конфигураций. Изготовим в кратчайшие сроки.
+                </p>
+                <a class="link" href="#">Подробнее</a>
+                <img src="images/Arrow.svg" alt="Стрелка" height=auto />
             </div>
         </section>
-        <section>
-            <h2>Brands</h2>
-            <ul>
-                <li><img src="#" alt="Hahnemuhle"></li>
-                <li><img src="#" alt="Canson"></li>
-                <li><img src="#" alt="Royal Talens"></li>
-                <li><img src="#" alt="Fabriano"></li>
+        <section class="background">
+            <h2 hidden>Brands</h2>
+            <ul class="brands">
+                <li><img src="images/Hahnemuhle.svg" alt="Hahnemuhle" /></li>
+                <li><img src="images/Canson.svg" alt="Canson" /></li>
+                <li><img src="images/Royal_talens.svg" alt="Royal Talens" /></li>
+                <li><img src="images/Fabriano.svg" alt="Fabriano" /></li>
             </ul>
         </section>
-        <section>
+        <section class="pad">
+            <img class="scetch" src="images/scetchbook.png" alt="Скетчбук" />
             <h2>Simple скетчбук</h2>
-            <img src="#" alt="Скетчбук">
-            <p>80 листов, твердая обложка, бумага Fabriano 200 г/м2. Подойдет и для графики и для акварели. Для самых
-                смелых творческих замыслов!</p>
-            <a href="#">Купить</a>
+            <p>
+                80 листов, твердая обложка, бумага Fabriano 200 г/м2. Подойдет и для
+                графики и для акварели. Для самых смелых творческих замыслов!
+            </p>
+            <div class="catalog">
+                <a href="#">Купить</a>
+            </div>
+
         </section>
     </main>
     <footer>
-        <img src="#" alt="Логотип">
-        <ul>
-            <li><a href="#"><img src="#" alt="Facebook"></a></li>
-            <li><a href="#"><img src="#" alt="Twitter"></a></li>
-            <li><a href="#"><img src="#" alt="Instagram"></a></li>
-            <li><a href="#"><img src="#" alt="YouTube"></a></li>
+        <img class="Logo_footer" src="images/Logo_white.svg" alt="Логотип" />
+        <ul class="social">
+            <li>
+                <a href="#"><img src="images/Facebook.svg" alt="Facebook" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/Twitter.svg" alt="Twitter" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/Insta.svg" alt="Instagram" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/YouTube.svg" alt="YouTube" /></a>
+            </li>
         </ul>
-        <p>SIMPLE <img src="#" alt="®"> 2023</p>
+        <p>SIMPLE <img src="#" alt="®" /> 2023</p>
     </footer>
 </body>
 

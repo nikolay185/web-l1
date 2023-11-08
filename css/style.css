@@ -1,0 +1,195 @@
+:root {
+    font-size: 62.5%;
+    --text-color: #85859B;
+    --header-color: #4C5866;
+    --background-color: #EBEBEB;
+    --footer-color: #4C5866;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--text-color);
+    line-height: 140%;
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+header button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    padding: 0;
+}
+
+header div {
+    border-top: 1px solid #DDDDDD;
+    padding-top: 14px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--footer-color);
+}
+
+footer p {
+    background-color: var(--background-color);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    font-size: 2.4rem;
+    color: var(--header-color);
+}
+
+h3 {
+    font-size: 2.4rem;
+    color: var(--header-color);
+    margin-bottom: 14px;
+}
+
+a:visited {
+    color: #7875FE;
+}
+
+a:active {
+    color: red;
+}
+
+a:link {
+    color: #7875EE;
+}
+
+.header{
+    color: var(--header-color);
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 30px;
+    padding-top: 12px;
+}
+
+.marg{
+    margin-top: 0;
+    margin-left: 30px;
+}
+
+.header-big {
+    font-size: 3rem;
+}
+
+.header-small {
+    font-size: 1.8rem;
+}
+
+.background {
+    background-color: var(--background-color);
+    padding: 0 15px;
+}
+
+.pad {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.bombagia {
+    font-size: 1.4rem;
+}
+
+.catalog {
+    color: #7875FE;
+    width: fit-content;
+    height: 50px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    margin-bottom: 50px;
+    border: 1px solid #7875FE;
+}
+
+.link {
+    text-decoration: none;
+    color: #7875FE;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.brands {
+    overflow: scroll;
+    white-space: nowrap;
+    padding-left: 0;
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
+.brands li {
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 0px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.social {
+    overflow: scroll;
+    white-space: nowrap;
+    padding-left: 30px;
+}
+
+.social li {
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.Logo_header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10.5px;
+    padding-bottom: 13px;
+    text-align: center;
+}
+
+.Logo_footer {
+    padding: 20px 75px;
+    margin: 0 15px;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.navigation {
+    float: right;
+    padding-left: 30px;
+}
+
+.result {
+    border-top: 1px solid var(--text-color);
+    display: flex;
+}
+
+.results {
+    padding: 60px 0;
+}
+
+.paper {
+    margin-top: 20px;
+}
+
+.scetch {
+    margin-top: 60px;
+}
+
+.package{
+    margin-top: 60px;
+}
