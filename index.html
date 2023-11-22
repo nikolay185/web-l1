@@ -12,20 +12,20 @@
     <title>Простые вещи из бумаги</title>
 </head>
 
-<body>
+<body class="wrapper">
     <header>
         <a href="#">
             <img class="Logo_header" src="images/Logo_black.svg" alt="Логотип" />
         </a>
-        <div class="pad">
+        <div style="display: flex;">
             <button><img src="images/List.svg" alt="Модальное окно"></button>
             <button class="navigation"><img src="images/Search.svg" alt="Поиск"></button>
-            <a class="navigation" href="#"><img src="images/log-in.svg" alt="Вход"></a>
+            <a style="margin-left: 30px;" href="#"><img src="images/log-in.svg" alt="Вход"></a>
         </div>
     </header>
     <main>
         <h1 hidden>Main page on simple</h1>
-        <section class="pad bombagia">
+        <section class="bombagia">
             <h2>Простые вещи.<br>Из бумаги</h2>
             <p>
                 Бума́га (предположительно от итал. bombagia, первоисточником же
@@ -35,7 +35,7 @@
                 <a href="#">Каталог</a>
             </div>
         </section>
-        <section class="background">
+        <section class="background res">    
             <div class="results">
                 <div class="result">
                     <div>
@@ -65,7 +65,6 @@
                     </div>
                 </div>
             </div>
-
             <div>
                 <img src="images/paper.png" alt="paper" />
                 <h2>Максимальная белизна</h2>
@@ -81,54 +80,51 @@
                 </p>
             </div>
         </section>
-        <section class="pad">
+        <section class="goods">
             <h2 hidden>Catalog</h2>
-            <div>
-                <img class="package" src="images/packaging.png" alt="packaging" width=290 height=180 />
+            <div class="good">
+                <img style="margin-top: 0;" src="images/packaging.png" alt="packaging" width=290 height=180 />
                 <h3>Упаковка</h3>
-                <p class="bombagia">Тираж: от 50 штук</p>
+                <p class="edition">Тираж: от 50 штук</p>
                 <p>
                     Сделано из крафт-бумаги или плотного картона. Упаковки имеют
                     различные формы и расцветки, изготовим форму под заказ.
                 </p>
-                <a class="link" href="#">Подробнее</a>
-                <img src="images/Arrow.svg" alt="Стрелка" width=20 height=auto>
+                <a class="link" href="#">Подробнее <img src="images/Arrow.svg" alt="Стрелка" width=20 height=auto /></a>
             </div>
-            <div>
-                <img class="package" src="images/packets.png" alt="packets" width=290 height=180 />
+            <div class="good">
+                <img src="images/packets.png" alt="packets" width=290 height=180 />
                 <h3>Пакеты</h3>
-                <p class="bombagia">Тираж: от 200 штук</p>
+                <p class="edition">Тираж: от 200 штук</p>
                 <p>
                     С прямоугольным дном. От 10 см до 60 см по высоте. Материалы:
                     картон, крафт-бумага. Различные расцветки и дизайн.
                 </p>
-                <a class="link" href="#">Подробнее</a>
-                <img src="images/Arrow.svg" alt="Стрелка" width=20 height=auto />
+                <a class="link" href="#">Подробнее <img src="images/Arrow.svg" alt="Стрелка" width=20 height=auto /></a>
             </div>
-            <div>
-                <img class="package" src="images/cases.png" alt="cases" />
+            <div class="good">
+                <img src="images/cases.png" alt="cases" />
                 <h3>Кейсы</h3>
-                <p class="bombagia">Тираж: от 30 штук</p>
+                <p class="edition">Тираж: от 30 штук</p>
                 <p>
                     Подойдет для документов и других бумаг. Различные расцветки, размеры
                     и плотность. Материал: прессованная бумага.
                 </p>
-                <a class="link" href="#">Подробнее</a>
-                <img src="images/Arrow.svg" alt="Стрелка" width=20 height=auto />
+                <a class="link" href="#">Подробнее <img src="images/Arrow.svg" alt="Стрелка" width=20 height=auto /></a>
+                
             </div>
-            <div>
-                <img class="package" src="images/another.png" alt="Упаковка" />
+            <div class="good">
+                <img src="images/another.png" alt="Упаковка" />
                 <h3>Другие изделия</h3>
                 <p>Тираж: от 100 штук</p>
                 <p>
                     Нестандартные упаковки, кейсы и другие изделия различных размеров и
                     конфигураций. Изготовим в кратчайшие сроки.
                 </p>
-                <a class="link" href="#">Подробнее</a>
-                <img src="images/Arrow.svg" alt="Стрелка" height=auto />
+                <a class="link" href="#">Подробнее <img src="images/Arrow.svg" alt="Стрелка" height=auto /></a>
             </div>
         </section>
-        <section class="background">
+        <section class="background brand">
             <h2 hidden>Brands</h2>
             <ul class="brands">
                 <li><img src="images/Hahnemuhle.svg" alt="Hahnemuhle" /></li>
@@ -137,8 +133,8 @@
                 <li><img src="images/Fabriano.svg" alt="Fabriano" /></li>
             </ul>
         </section>
-        <section class="pad">
-            <img class="scetch" src="images/scetchbook.png" alt="Скетчбук" />
+        <section class="scetch">
+            <img src="images/scetchbook.png" alt="Скетчбук" />
             <h2>Simple скетчбук</h2>
             <p>
                 80 листов, твердая обложка, бумага Fabriano 200 г/м2. Подойдет и для
@@ -147,7 +143,6 @@
             <div class="catalog">
                 <a href="#">Купить</a>
             </div>
-
         </section>
     </main>
     <footer>

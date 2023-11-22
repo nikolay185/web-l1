@@ -4,6 +4,7 @@
     --header-color: #4C5866;
     --background-color: #EBEBEB;
     --footer-color: #4C5866;
+    --link-color: #7875FE;
 }
 
 body {
@@ -13,6 +14,11 @@ body {
     line-height: 140%;
     text-align: left;
     font-size: 1.6rem;
+}
+
+header{
+    margin: 0 15px;
+    margin-bottom: 50px;
 }
 
 header button {
@@ -31,6 +37,7 @@ header div {
 }
 
 footer {
+    margin-top: 60px;
     text-align: center;
     background-color: var(--footer-color);
 }
@@ -61,16 +68,19 @@ h3 {
     margin-bottom: 14px;
 }
 
-a:visited {
-    color: #7875FE;
+a:visited, a:link {
+    color: var(--link-color);
 }
 
 a:active {
     color: red;
 }
 
-a:link {
-    color: #7875EE;
+.wrapper{
+    box-sizing: border-box;
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header{
@@ -99,17 +109,17 @@ a:link {
     padding: 0 15px;
 }
 
-.pad {
-    padding-left: 15px;
-    padding-right: 15px;
+.navigation {
+    margin-left: auto;
 }
 
 .bombagia {
+    margin: 50px 15px;
     font-size: 1.4rem;
 }
 
 .catalog {
-    color: #7875FE;
+    color: var(--link-color);
     width: fit-content;
     height: 50px;
     font-size: 1.8rem;
@@ -117,22 +127,35 @@ a:link {
     display: flex;
     align-items: center;
     padding: 0 50px;
-    margin-bottom: 50px;
-    border: 1px solid #7875FE;
+    border: 1px solid var(--link-color);
 }
 
 .link {
     text-decoration: none;
-    color: #7875FE;
+    color: var(--link-color);
     font-size: 2rem;
     font-weight: bold;
 }
 
+.goods {
+    box-sizing: border-box;
+    margin: 60px 15px;
+}
+
+.good {
+    box-sizing: border-box;
+    margin: 60px 0px;
+}
+
+.brand{
+    margin: 60px 0;
+    padding: 0px 15px;
+}
+
 .brands {
-    overflow: scroll;
+    overflow-x: scroll;
     white-space: nowrap;
     padding-left: 0;
-    margin-top: 60px;
     margin-bottom: 0;
 }
 
@@ -145,14 +168,13 @@ a:link {
 }
 
 .social {
-    overflow: scroll;
-    white-space: nowrap;
-    padding-left: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
 }
 
 .social li {
     display: inline-block;
-    padding-right: 30px;
 }
 
 .Logo_header {
@@ -170,9 +192,11 @@ a:link {
     border-bottom: 1px solid var(--text-color);
 }
 
-.navigation {
-    float: right;
-    padding-left: 30px;
+.res {
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
 }
 
 .result {
@@ -184,14 +208,14 @@ a:link {
     padding: 60px 0;
 }
 
+.edition {
+    font-size: 1.4rem;
+}
+
 .paper {
     margin-top: 20px;
 }
 
 .scetch {
-    margin-top: 60px;
-}
-
-.package{
-    margin-top: 60px;
+    margin: 60px 15px;
 }
