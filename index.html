@@ -14,28 +14,45 @@
 
 <body class="wrapper">
     <header>
-        <a href="#">
-            <img class="Logo_header" src="images/Logo_black.svg" alt="Логотип" />
-        </a>
-        <div style="display: flex;">
-            <button><img src="images/List.svg" alt="Модальное окно"></button>
-            <button class="navigation"><img src="images/Search.svg" alt="Поиск"></button>
-            <a style="margin-left: 30px;" href="#"><img src="images/log-in.svg" alt="Вход"></a>
+        <div class="top">
+            <a href="#">
+                <img class="Logo_header" src="images/Logo_black.svg" alt="Логотип" />
+            </a>
+            <div class="nav">
+                <button><img src="images/Search.svg" alt="Поиск"></button>
+                <a href="#"><img src="images/log-in.svg" alt="Вход"></a>
+            </div>
+        </div>
+        <div class="div">
+            <button class="header_button"><img src="images/List.svg" alt="Модальное окно"></button>
+            <div class="ref">
+                <a href="#">Продукция</a>
+                <a href="#">Материалы</a>
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="navigation">
+                <button><img src="images/Search.svg" alt="Поиск"></button>
+                <a href="#"><img src="images/log-in.svg" alt="Вход"></a>
+            </div>
         </div>
     </header>
     <main>
-        <h1 hidden>Main page on simple</h1>
+        <h1 class="sr-only">Main page on simple</h1>
         <section class="bombagia">
-            <h2>Простые вещи.<br>Из бумаги</h2>
-            <p>
-                Бума́га (предположительно от итал. bombagia, первоисточником же
-                считается иранский) — волокнистый материал c минеральными добавками.
-            </p>
-            <div class="catalog">
-                <a href="#">Каталог</a>
+            <div>
+                <h2 class="header-big">Простые вещи.<br>Из бумаги</h2>
+                <p>
+                    Бума́га (предположительно от итал. bombagia, первоисточником же
+                    считается иранский) — волокнистый материал c минеральными добавками.
+                </p>
+                <div class="catalog">
+                    <a href="#">Каталог</a>
+                </div>
             </div>
+            <img class="simple_product" src="images/simple_product.png" alt="simple_product">
         </section>
-        <section class="background res">    
+        <section class="background res">
             <div class="results">
                 <div class="result">
                     <div>
@@ -65,25 +82,27 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <img src="images/paper.png" alt="paper" />
-                <h2>Максимальная белизна</h2>
-                <p>
-                    Для повышения белизны, гладкости и мягкости в состав бумажной массы
-                    вводят белые минеральные вещества: мел, тальк, каолин и др. Эта
-                    операция называется наполнением.
-                </p>
-                <p>
-                    Отлив бумажного листа осуществляют на бумагоделательной машине,
-                    важнейшей частью которой является непрерывно движущаяся (как
-                    транспортер) металлическая или капроновая сетка.
-                </p>
+            <div class="bel">
+                <img class="paper_image" src="images/paper.png" alt="paper" />
+                <div>
+                    <h2>Максимальная белизна</h2>
+                    <p>
+                        Для повышения белизны, гладкости и мягкости в состав бумажной массы
+                        вводят белые минеральные вещества: мел, тальк, каолин и др. Эта
+                        операция называется наполнением.
+                    </p>
+                    <p>
+                        Отлив бумажного листа осуществляют на бумагоделательной машине,
+                        важнейшей частью которой является непрерывно движущаяся (как
+                        транспортер) металлическая или капроновая сетка.
+                    </p>
+                </div>
             </div>
         </section>
         <section class="goods">
-            <h2 hidden>Catalog</h2>
+            <h2 class="sr-only">Catalog</h2>
             <div class="good">
-                <img style="margin-top: 0;" src="images/packaging.png" alt="packaging" width=290 height=180 />
+                <img class="good_img" src="images/packaging.png" alt="packaging" />
                 <h3>Упаковка</h3>
                 <p class="edition">Тираж: от 50 штук</p>
                 <p>
@@ -93,7 +112,7 @@
                 <a class="link" href="#">Подробнее <img src="images/Arrow.svg" alt="Стрелка" width=20 height=auto /></a>
             </div>
             <div class="good">
-                <img src="images/packets.png" alt="packets" width=290 height=180 />
+                <img class="good_img" src="images/packets.png" alt="packets" />
                 <h3>Пакеты</h3>
                 <p class="edition">Тираж: от 200 штук</p>
                 <p>
@@ -103,7 +122,7 @@
                 <a class="link" href="#">Подробнее <img src="images/Arrow.svg" alt="Стрелка" width=20 height=auto /></a>
             </div>
             <div class="good">
-                <img src="images/cases.png" alt="cases" />
+                <img class="good_img" src="images/cases.png" alt="cases" />
                 <h3>Кейсы</h3>
                 <p class="edition">Тираж: от 30 штук</p>
                 <p>
@@ -111,10 +130,9 @@
                     и плотность. Материал: прессованная бумага.
                 </p>
                 <a class="link" href="#">Подробнее <img src="images/Arrow.svg" alt="Стрелка" width=20 height=auto /></a>
-                
             </div>
             <div class="good">
-                <img src="images/another.png" alt="Упаковка" />
+                <img class="good_img" src="images/another.png" alt="Упаковка" />
                 <h3>Другие изделия</h3>
                 <p>Тираж: от 100 штук</p>
                 <p>
@@ -125,7 +143,7 @@
             </div>
         </section>
         <section class="background brand">
-            <h2 hidden>Brands</h2>
+            <h2 class="sr-only">Brands</h2>
             <ul class="brands">
                 <li><img src="images/Hahnemuhle.svg" alt="Hahnemuhle" /></li>
                 <li><img src="images/Canson.svg" alt="Canson" /></li>
@@ -134,34 +152,40 @@
             </ul>
         </section>
         <section class="scetch">
-            <img src="images/scetchbook.png" alt="Скетчбук" />
-            <h2>Simple скетчбук</h2>
-            <p>
-                80 листов, твердая обложка, бумага Fabriano 200 г/м2. Подойдет и для
-                графики и для акварели. Для самых смелых творческих замыслов!
-            </p>
-            <div class="catalog">
-                <a href="#">Купить</a>
+            <img class="scetch_img" src="images/scetchbook.jpg" alt="Скетчбук" />
+            <div>
+                <h2>Simple скетчбук</h2>
+                <p>
+                    80 листов, твердая обложка, бумага Fabriano 200 г/м2. Подойдет и для
+                    графики и для акварели. Для самых смелых творческих замыслов!
+                </p>
+                <div class="catalog">
+                    <a href="#">Купить</a>
+                </div>
             </div>
+
         </section>
     </main>
     <footer>
-        <img class="Logo_footer" src="images/Logo_white.svg" alt="Логотип" />
-        <ul class="social">
-            <li>
-                <a href="#"><img src="images/Facebook.svg" alt="Facebook" /></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/Twitter.svg" alt="Twitter" /></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/Insta.svg" alt="Instagram" /></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/YouTube.svg" alt="YouTube" /></a>
-            </li>
-        </ul>
-        <p>SIMPLE <img src="images/copyright.svg" alt="®" width=12px height=12px/> 2023</p>
+        <div>
+            <img class="Logo_footer" src="images/Logo_white.svg" alt="Логотип" />
+            <ul class="social">
+                <li>
+                    <a href="#"><img src="images/Facebook.svg" alt="Facebook" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/Twitter.svg" alt="Twitter" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/Insta.svg" alt="Instagram" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/YouTube.svg" alt="YouTube" /></a>
+                </li>
+            </ul>
+        </div>
+        <a class="dop" href="grid.html">grid</a>
+        <p>SIMPLE <img src="images/copyright.svg" alt="®" width=12px height=12px /> 2023</p>
     </footer>
 </body>
 

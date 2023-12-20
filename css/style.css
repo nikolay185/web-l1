@@ -16,7 +16,7 @@ body {
     font-size: 1.6rem;
 }
 
-header{
+header {
     margin: 0 15px;
     margin-bottom: 50px;
 }
@@ -34,6 +34,11 @@ header button {
 header div {
     border-top: 1px solid #DDDDDD;
     padding-top: 14px;
+    display: flex;
+}
+
+header div a {
+    margin-left: 30px;
 }
 
 footer {
@@ -68,7 +73,8 @@ h3 {
     margin-bottom: 14px;
 }
 
-a:visited, a:link {
+a:visited,
+a:link {
     color: var(--link-color);
 }
 
@@ -76,14 +82,27 @@ a:active {
     color: red;
 }
 
-.wrapper{
+.wrapper {
     box-sizing: border-box;
-    max-width: 1110px;
+    max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.header{
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.header {
     color: var(--header-color);
     font-weight: bold;
     margin-bottom: 0;
@@ -91,13 +110,24 @@ a:active {
     padding-top: 12px;
 }
 
-.marg{
+.header_button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    padding: 0;
+}
+
+.marg {
     margin-top: 0;
     margin-left: 30px;
 }
 
 .header-big {
     font-size: 3rem;
+    line-height: 100%;
 }
 
 .header-small {
@@ -109,8 +139,53 @@ a:active {
     padding: 0 15px;
 }
 
+.top {
+    display: block;
+    padding: 0;
+}
+
+.top a {
+    margin: 0;
+}
+
 .navigation {
     margin-left: auto;
+    padding-top: 0;
+    border-top: 0;
+}
+
+.navigation a {
+    display: block;
+    padding-top: 3px;
+}
+
+.nav {
+    display: none;
+    margin-left: auto;
+    padding-top: 10.5px;
+    border-top: 0;
+}
+
+.nav a {
+    margin-left: 30px;
+}
+
+.ref {
+    display: none;
+    font-size: 2rem;
+}
+
+.ref a {
+    margin: 0;
+}
+
+.ref a:visited,
+.ref a:link {
+    color: var(--header-color);
+}
+
+.ref a:active {
+    color: black;
 }
 
 .bombagia {
@@ -130,6 +205,10 @@ a:active {
     border: 1px solid var(--link-color);
 }
 
+.simple_product {
+    display: none;
+}
+
 .link {
     text-decoration: none;
     color: var(--link-color);
@@ -147,7 +226,11 @@ a:active {
     margin: 60px 0px;
 }
 
-.brand{
+.good_img {
+    margin-top: 0;
+}
+
+.brand {
     margin: 60px 0;
     padding: 0px 15px;
 }
@@ -156,25 +239,24 @@ a:active {
     overflow-x: scroll;
     white-space: nowrap;
     padding-left: 0;
-    margin-bottom: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 0;
 }
 
 .brands li {
     display: inline-block;
-    margin-right: 30px;
-    margin-left: 0px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .social {
-    display: flex;
-    justify-content: space-around;
     padding-left: 0;
 }
 
 .social li {
     display: inline-block;
+    padding: 0 15px;
 }
 
 .Logo_header {
@@ -216,6 +298,339 @@ a:active {
     margin-top: 20px;
 }
 
+.paper_image {
+    width: 290px;
+    height: 223px;
+}
+
 .scetch {
     margin: 60px 15px;
+}
+
+.scetch_img {
+    width: 290px;
+    height: 221px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: 
+    "sidebar main main main main main"
+    "sidebar main main main main main"
+    "sidebar main main main main main";
+    gap: 10px;
+}
+
+.grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.one {
+    grid-column: 2 / 8;
+    grid-row: 1 / 2;
+}
+
+.two {
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+.three {
+    grid-column: 4 / 6;
+    grid-row: 2;
+}
+
+.four {
+    grid-column: 6 / 8;
+    grid-row: 2;
+}
+
+.five {
+    grid-column: 2 / 5;
+    grid-row: 3;
+}
+
+.six {
+    grid-column: 5 / 8;
+    grid-row: 3;
+}
+
+.referals {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 1;
+    grid-row: 1/4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.container div {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container div button {
+    grid-column: 2;
+}
+
+@media (min-width: 576px) {
+    header div{
+        border: 0;
+    }
+
+    .Logo_header {
+        margin: 0;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .nav {
+        display: inline;
+    }
+
+    .top {
+        display: flex;
+    }
+
+    .header_button {
+        display: none;
+    }
+
+    .ref {
+        display: flex;
+        padding: 0;
+        border: 0;
+        justify-content: space-around;
+        font-weight: bold;
+    }
+
+    .div {
+        display: block;
+        padding-bottom: 14px;
+        border-top: 1px solid #DDDDDD;
+        border-bottom: 1px solid #DDDDDD;
+    }
+
+    .bombagia {
+        font-size: 1.6rem;
+    }
+
+    .header-big {
+        font-size: 3.6rem;
+    }
+
+    .bel img {
+        width: 330px;
+        height: 256px;
+    }
+
+    .results {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .result {
+        display: block;
+        max-width: 160px;
+    }
+
+    .goods {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .good {
+        width: 240px;
+        margin: 0 auto;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .good_img {
+        width: 240px;
+    }
+
+    .brands {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .brands li {
+        width: 240px;
+        height: 127px;
+        margin: 0 auto;
+    }
+
+    .brands li img {
+        width: 240px;
+        height: 127px;
+    }
+
+    .scetch_img {
+        width: 449px;
+        height: 342px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .brand {
+        margin-top: 30px;
+    }
+
+    .Logo_footer {
+        padding: 0;
+        margin: 0;
+        border-bottom: 0;
+    }
+
+    footer div {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 25px;
+    }
+
+    .dop {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 1.8rem;
+    }
+
+    .bombagia {
+        font-size: 1.8rem;
+    }
+
+    .header-big {
+        font-size: 5rem;
+    }
+
+    .bel {
+        display: flex;
+        font-size: 1.8rem;
+    }
+
+    .bel h2 {
+        font-size: 3rem;
+    }
+
+    .good {
+        width: 330px;
+    }
+
+    .good_img {
+        width: 330px;
+    }
+    .brands {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .brands li {
+        width: 150px;
+        height: 80px;
+    }
+
+    .brands li img {
+        width: 150px;
+        height: 80px;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        margin-left: auto;
+        height: 24px;
+        padding-top: 0;
+        border-top: 0;
+    }
+    
+    .navigation a {
+        display: block;
+        padding-top: 0;
+    }
+
+    .ref a{
+        display: block;
+        margin-right: 60px;
+    }
+
+    .div {
+        display: flex;
+        justify-content: center;
+        border: 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #DDDDDD;
+    }
+
+    .bel img {
+        width: 730px;
+        height: 564px;
+    }
+
+    .goods {
+        display: grid;
+        grid-template-columns: repeat(4, 255px);
+        gap: 30px;
+    }
+
+    .good {
+        width: 255px;
+    }
+
+    .good_img {
+        width: 255px;
+    }
+
+    .brands li {
+        width: 255px;
+        height: 135px;
+    }
+
+    .brands li img {
+        width: 255px;
+        height: 135px;
+    }
+
+    .result {
+        border-top: 1px solid var(--text-color);
+        display: flex;
+        max-width: 245px;
+    }
 }
